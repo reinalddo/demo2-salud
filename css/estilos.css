@@ -4,8 +4,24 @@ body{margin:0;color:#21313a;background:#fff}
 
 /* NAV */
 .navbar{transition:background 0.25s ease,padding 0.25s ease}
-.navbar.scrolled{background:var(--primary);box-shadow:0 6px 20px rgba(13,149,200,0.12)}
+.navbar .navbar-brand, .navbar .nav-link { color: rgba(0,0,0,0.85); }
+.navbar .nav-link:hover, .navbar .nav-link:focus { color: var(--accent); }
+.navbar .btn { color: var(--primary); }
+/* scrolled: force colored background and high-contrast text */
+.navbar.scrolled{background:var(--primary) !important;box-shadow:0 6px 20px rgba(13,149,200,0.12)}
+.navbar.scrolled .navbar-brand, .navbar.scrolled .nav-link, .navbar.scrolled .btn { color: #fff !important; }
+.navbar.scrolled .navbar-toggler { border-color: rgba(255,255,255,0.12) !important; }
+.navbar.scrolled .navbar-toggler-icon { filter: invert(1) !important; }
 .nav-spacer{height:64px}
+
+/* Ensure toggler icon visible on light background */
+.navbar-light .navbar-toggler-icon { filter: none; }
+.navbar-light .navbar-toggler { border-color: rgba(0,0,0,0.08); }
+
+/* WhatsApp CTA button */
+.btn-whatsapp{background:#25D366;color:#fff;border:0}
+.btn-whatsapp:hover,.btn-whatsapp:focus{background:#1DA851;color:#fff}
+.navbar.scrolled .btn-whatsapp{background:#25D366 !important;color:#fff !important}
 
 /* HERO - mobile first: stacked content */
 .hero{display:flex;align-items:center;justify-content:center;padding:3rem 1rem;background-repeat:no-repeat;background-size:cover}

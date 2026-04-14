@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
     <div class="container">
         <a class="navbar-brand fw-bold" href="index">
             <i class="bi bi-person-badge me-2"></i><?php echo $doctor_name; ?>
@@ -37,7 +37,7 @@
                 <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                 <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
                 <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
-                <li class="nav-item ms-2"><a class="btn btn-light text-primary rounded-pill px-3" href="<?php echo wa_link(); ?>" target="_blank"><i class="bi bi-whatsapp"></i> Cita</a></li>
+                <li class="nav-item ms-2"><a class="btn btn-whatsapp rounded-pill px-3" href="<?php echo wa_link(); ?>" target="_blank"><i class="bi bi-whatsapp"></i> Cita</a></li>
             </ul>
         </div>
     </div>
