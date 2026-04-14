@@ -104,3 +104,34 @@ body{margin:0;color:#21313a;background:#fff}
 .site-footer a{color:#0d95c8}
 .site-footer .social a{display:inline-block;width:36px;height:36px;border-radius:50%;background:#fff;margin-right:.5rem;line-height:36px;text-align:center;color:#0d95c8}
 
+.search-banner{background:var(--primary);color:#fff;padding:1rem}
+.search-banner h3{color:#fff;margin:0}
+.search-banner .form-control{background:rgba(255,255,255,0.12);border:0;color:#fff;box-shadow:none}
+.search-banner .form-control::placeholder{color:rgba(255,255,255,0.9)}
+.search-banner .input-group .btn{border-radius:8px;border:1px solid rgba(255,255,255,0.12);background:#fff;color:var(--primary)}
+.search-banner .btn-light{background:#fff;color:var(--primary)}
+
+/* Utilities for responsive width used in services search */
+@media(min-width:768px){
+    .w-md-50{width:50% !important}
+}
+
+/* Services grid and cards (overlay style) */
+.service-grid .service-card{background:#fff;border-radius:10px;overflow:hidden}
+.service-card .card-img-wrap{height:200px;position:relative;overflow:hidden}
+.service-card img{width:100%;height:100%;object-fit:cover;filter:brightness(0.92);transition:transform .45s ease,filter .35s ease;display:block}
+.service-card .overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.45))}
+.service-card .card-info{position:absolute;left:16px;right:16px;bottom:12px}
+.service-card .card-info h5{font-size:1rem;margin-bottom:0.25rem}
+.service-card .card-info p{font-size:0.8rem;opacity:0.95}
+.service-card:hover img{transform:scale(1.05);filter:brightness(0.98)}
+.card-footer{border-top:0}
+.btn-teal{background:var(--primary);color:#fff;border-radius:8px;padding:.38rem .8rem;border:0}
+
+@media(min-width:768px){
+    .service-card .card-img-wrap{height:180px}
+}
+@media(min-width:1200px){
+    .service-card .card-img-wrap{height:200px}
+}
+
