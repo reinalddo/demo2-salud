@@ -17,6 +17,8 @@ include 'includes/header.php';
             </div>
         </div>
     </section>
+    
+    
 
     <section class="py-5 service-list bg-light">
         <div class="container">
@@ -34,8 +36,9 @@ include 'includes/header.php';
                             </div>
                         </div>
                         <div class="card-footer text-center bg-white p-3">
-                            <a href="#" class="btn btn-teal btn-sm">Más información</a>
+                            <a href="servicio.php" class="btn btn-teal btn-sm">Más información</a>
                         </div>
+                        <a href="servicio.php" class="stretched-link" aria-label="Ver servicio"></a>
                     </div>
                 </div>
                 <!-- Card 2 -->
@@ -50,8 +53,9 @@ include 'includes/header.php';
                             </div>
                         </div>
                         <div class="card-footer text-center bg-white p-3">
-                            <a href="#" class="btn btn-teal btn-sm">Más información</a>
+                            <a href="servicio.php" class="btn btn-teal btn-sm">Más información</a>
                         </div>
+                        <a href="servicio.php" class="stretched-link" aria-label="Ver servicio"></a>
                     </div>
                 </div>
                 <!-- Card 3 -->
@@ -66,8 +70,9 @@ include 'includes/header.php';
                             </div>
                         </div>
                         <div class="card-footer text-center bg-white p-3">
-                            <a href="#" class="btn btn-teal btn-sm">Más información</a>
+                            <a href="servicio.php" class="btn btn-teal btn-sm">Más información</a>
                         </div>
+                        <a href="servicio.php" class="stretched-link" aria-label="Ver servicio"></a>
                     </div>
                 </div>
                 <!-- Card 4 -->
@@ -82,8 +87,9 @@ include 'includes/header.php';
                             </div>
                         </div>
                         <div class="card-footer text-center bg-white p-3">
-                            <a href="#" class="btn btn-teal btn-sm">Más información</a>
+                            <a href="servicio.php" class="btn btn-teal btn-sm">Más información</a>
                         </div>
+                        <a href="servicio.php" class="stretched-link" aria-label="Ver servicio"></a>
                     </div>
                 </div>
 
@@ -99,8 +105,9 @@ include 'includes/header.php';
                             </div>
                         </div>
                         <div class="card-footer text-center bg-white p-3">
-                            <a href="#" class="btn btn-teal btn-sm">Más información</a>
+                            <a href="servicio.php" class="btn btn-teal btn-sm">Más información</a>
                         </div>
+                        <a href="servicio.php" class="stretched-link" aria-label="Ver servicio"></a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
@@ -114,8 +121,9 @@ include 'includes/header.php';
                             </div>
                         </div>
                         <div class="card-footer text-center bg-white p-3">
-                            <a href="#" class="btn btn-teal btn-sm">Más información</a>
+                            <a href="servicio.php" class="btn btn-teal btn-sm">Más información</a>
                         </div>
+                        <a href="servicio.php" class="stretched-link" aria-label="Ver servicio"></a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="350">
@@ -129,8 +137,9 @@ include 'includes/header.php';
                             </div>
                         </div>
                         <div class="card-footer text-center bg-white p-3">
-                            <a href="#" class="btn btn-teal btn-sm">Más información</a>
+                            <a href="servicio.php" class="btn btn-teal btn-sm">Más información</a>
                         </div>
+                        <a href="servicio.php" class="stretched-link" aria-label="Ver servicio"></a>
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
@@ -144,8 +153,9 @@ include 'includes/header.php';
                             </div>
                         </div>
                         <div class="card-footer text-center bg-white p-3">
-                            <a href="#" class="btn btn-teal btn-sm">Más información</a>
+                            <a href="servicio.php" class="btn btn-teal btn-sm">Más información</a>
                         </div>
+                        <a href="servicio.php" class="stretched-link" aria-label="Ver servicio"></a>
                     </div>
                 </div>
             </div>

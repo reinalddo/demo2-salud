@@ -33,7 +33,6 @@
                         <li><a href="index.php">Inicio</a></li>
                         <li><a href="sobre.php">Sobre</a></li>
                         <li><a href="servicios.php">Servicios</a></li>
-                        <li><a href="testimonios.php">Testimonios</a></li>
                         <li><a href="contacto.php">Contáctenos</a></li>
                     </ul>
                 </div>

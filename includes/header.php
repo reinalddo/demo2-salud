@@ -36,7 +36,6 @@
                 <li class="nav-item"><a class="nav-link" href="index.php">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="sobre.php">Objetivos</a></li>
                 <li class="nav-item"><a class="nav-link" href="servicios.php">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link" href="testimonios.php">Testimonios</a></li>
                 <li class="nav-item ms-2"><a class="btn btn-whatsapp rounded-pill px-3" href="<?php echo wa_link(); ?>" target="_blank"><i class="bi bi-whatsapp"></i> Cita</a></li>
             </ul>
         </div>

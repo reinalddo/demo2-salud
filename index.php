@@ -40,41 +40,7 @@ include 'includes/header.php';
         </div>
     </section>
 
-    <!-- SERVICIOS -->
-    <section id="servicios" class="py-4 bg-light">
-        <div class="container">
-            <h3 class="fw-bold mb-4" data-aos="fade-up">Servicios</h3>
-            <div class="row g-3">
-                <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
-                    <div class="card hover-lift">
-                        <img src="assets/img/services/service1.jpg" class="card-img-top" alt="Consulta">
-                        <div class="card-body">
-                            <h5 class="card-title">Consulta Privada</h5>
-                            <p class="card-text text-muted">Atención individualizada y diagnóstico integral.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="card hover-lift">
-                        <img src="assets/img/services/service2.jpg" class="card-img-top" alt="Ecografía">
-                        <div class="card-body">
-                            <h5 class="card-title">Ecografía y Pruebas</h5>
-                            <p class="card-text text-muted">Estudios rápidos con interpretación profesional.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="card hover-lift">
-                        <img src="assets/img/services/service3.jpg" class="card-img-top" alt="Teleconsulta">
-                        <div class="card-body">
-                            <h5 class="card-title">Teleconsulta</h5>
-                            <p class="card-text text-muted">Consultas online para seguimiento y conveniencia.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- (Servicios moved below in place of Testimonios) -->
 
     <!-- PORQUE ELEGIRNOS -->
     <section id="porque" class="why-us">
@@ -106,21 +72,36 @@ include 'includes/header.php';
         </div>
     </section>
 
-    <!-- TESTIMONIOS -->
-    <section id="testimonios" class="py-4 bg-white">
+    <!-- SERVICIOS (moved here replacing Testimonios) -->
+    <section id="servicios" class="py-4 bg-light">
         <div class="container">
-            <h3 class="fw-bold mb-4" data-aos="fade-up">Testimonios</h3>
+            <h3 class="fw-bold mb-4" data-aos="fade-up">Servicios</h3>
             <div class="row g-3">
-                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="50">
-                    <div class="p-3 border rounded-3">
-                        <p class="mb-2 fst-italic">"Excelente atención, el doctor me ayudó a controlar mi presión y me sentí escuchado en todo momento."</p>
-                        <small class="text-muted">— Paciente satisfecho</small>
+                <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in">
+                    <div class="card hover-lift">
+                        <img src="assets/img/services/service1.jpg" class="card-img-top" alt="Consulta">
+                        <div class="card-body">
+                            <h5 class="card-title">Consulta Privada</h5>
+                            <p class="card-text text-muted">Atención individualizada y diagnóstico integral.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-3 border rounded-3">
-                        <p class="mb-2 fst-italic">"Profesional y puntual. Recomendado para pacientes que buscan atención privada y cercana."</p>
-                        <small class="text-muted">— Paciente recurrente</small>
+                <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card hover-lift">
+                        <img src="assets/img/services/service2.jpg" class="card-img-top" alt="Ecografía">
+                        <div class="card-body">
+                            <h5 class="card-title">Ecografía y Pruebas</h5>
+                            <p class="card-text text-muted">Estudios rápidos con interpretación profesional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card hover-lift">
+                        <img src="assets/img/services/service3.jpg" class="card-img-top" alt="Teleconsulta">
+                        <div class="card-body">
+                            <h5 class="card-title">Teleconsulta</h5>
+                            <p class="card-text text-muted">Consultas online para seguimiento y conveniencia.</p>
+                        </div>
                     </div>
                 </div>
             </div>
