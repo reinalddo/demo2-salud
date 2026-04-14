@@ -50,6 +50,43 @@ body{margin:0;color:#21313a;background:#fff}
     .hero{min-height:80vh}
 }
 
+/* Page banner (sobre) - make full-width blue hero-like bar */
+.page-banner{background:var(--primary);padding:3.5rem 0;text-align:center}
+.page-banner .banner-box{display:inline-block;background:transparent;padding:0;border-radius:6px;box-shadow:none}
+.page-banner .banner-box h2{margin:0;font-weight:700;letter-spacing:1px;color:#fff;font-size:2rem;text-shadow:0 8px 22px rgba(0,0,0,0.35);padding:.25rem 1.5rem}
+@media(min-width:768px){
+    .page-banner .banner-box h2{font-size:2.5rem}
+}
+
+/* Strengths / partners / affiliations */
+.strengths{background:linear-gradient(0deg, rgba(13,149,200,0.06), rgba(13,149,200,0.06));padding:3rem 0}
+.strength-card{background:#fff;border-radius:10px;padding:1.25rem;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,0.04)}
+.strength-card i{font-size:36px;color:var(--primary);margin-bottom:.5rem}
+/* Animations: hover effects for strengths, partners and affiliations */
+.strength-card{transition:transform .28s ease,box-shadow .28s ease}
+.strength-card:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 18px 40px rgba(13,149,200,0.12)}
+.partners .partner-logo{transition:transform .28s ease,opacity .28s ease;cursor:pointer}
+.partners .partner-logo:hover{transform:scale(1.06);opacity:1}
+.aff-grid .aff-item{transition:transform .28s ease,box-shadow .28s ease}
+.aff-grid .aff-item:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+.why-card{transition:transform .28s ease,box-shadow .28s ease}
+.why-card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+.why-img{transition:transform .35s ease}
+.why-img:hover{transform:scale(1.03)}
+
+.partners{padding:2rem 0}
+.partners .partner-logo{height:48px;object-fit:contain;opacity:0.95}
+
+.affiliations{padding:2rem 0}
+.aff-grid .aff-item{background:#fff;border-radius:8px;padding:1rem;text-align:center;box-shadow:0 6px 16px rgba(0,0,0,0.04)}
+
+.video-section{padding:2rem 0}
+
+@media (max-width:767px){
+    .banner-box{padding:.5rem 1rem}
+}
+
+
 /* Why choose us section */
 .why-us{background:linear-gradient(rgba(13,149,200,0.95),rgba(13,149,200,0.95)), url('../img/hero/hero1.jpg') center/cover no-repeat;padding:4.5rem 0;color:#fff}
 .why-us h2{color:#fff}
