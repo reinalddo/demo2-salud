@@ -1,13 +1,60 @@
-    <footer class="bg-white text-muted py-5 mt-5">
+    <!-- Footer CTA -->
+    <section class="footer-cta">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5 class="fw-bold">Contacto</h5>
+            <div class="row align-items-center">
+                <div class="col-md-8 text-md-start text-center mb-3 mb-md-0">
+                    <h3 class="mb-1">¿Necesitas ayuda de un asesor?</h3>
+                    <p class="mb-0">Contáctenos y con gusto te ayudaremos en tu consulta.</p>
+                </div>
+                <div class="col-md-4 text-md-end text-center">
+                    <a href="contacto.php" class="btn btn-lg">CONTÁCTENOS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main footer -->
+    <footer class="site-footer mt-0">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <div class="footer-logo mb-3"><?php echo $doctor_name; ?></div>
+                    <p class="mb-2">Consultorio Privado · Atención personalizada y teleconsulta.</p>
+                    <div class="social">
+                        <a href="#" aria-label="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="youtube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="linkedin"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold">Enlaces principales</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.php">Inicio</a></li>
+                        <li><a href="sobre.php">Sobre</a></li>
+                        <li><a href="servicios.php">Servicios</a></li>
+                        <li><a href="testimonios.php">Testimonios</a></li>
+                        <li><a href="contacto.php">Contáctenos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold">Horario de atención</h6>
+                    <ul class="list-unstyled">
+                        <li>Lunes a Sábado: 7:00 a.m. - 8:00 p.m.</li>
+                        <li>Valet parking gratuito</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold">Contacto</h6>
                     <p class="mb-1"><?php echo $doctor_address; ?></p>
                     <p class="mb-0">Tel: <a href="tel:+<?php echo $doctor_phone; ?>"><?php echo $doctor_phone_display; ?></a></p>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <small>&copy; <?php echo date('Y'); ?> <?php echo $doctor_name; ?>. Demo para presentación a doctores.</small>
+            </div>
+
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <small>&copy; <?php echo date('Y'); ?> <?php echo $doctor_name; ?>. Todos los derechos reservados.</small>
                 </div>
             </div>
         </div>

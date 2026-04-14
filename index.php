@@ -76,6 +76,36 @@ include 'includes/header.php';
         </div>
     </section>
 
+    <!-- PORQUE ELEGIRNOS -->
+    <section id="porque" class="why-us">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">¿Por qué elegirnos?</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="50">
+                    <div class="why-card p-3">
+                        <h5 class="fw-bold text-uppercase">Especialistas en Oncología</h5>
+                        <p>Nuestro Staff Médico cuenta con amplia trayectoria y formación continua para brindar atención de calidad.</p>
+                        <img src="assets/img/services/service1.jpg" class="why-img mt-3" alt="Oncología">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-card p-3">
+                        <h5 class="fw-bold text-uppercase">Tecnología de vanguardia</h5>
+                        <p>Contamos con equipamiento moderno para diagnósticos precisos y tratamientos efectivos.</p>
+                        <img src="assets/img/services/service2.jpg" class="why-img mt-3" alt="Tecnología">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="why-card p-3">
+                        <h5 class="fw-bold text-uppercase">Atención integral</h5>
+                        <p>Ofrecemos servicios complementarios: farmacoterapia, nutrición, telemedicina y atención domiciliaria.</p>
+                        <img src="assets/img/services/service3.jpg" class="why-img mt-3" alt="Atención integral">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- TESTIMONIOS -->
     <section id="testimonios" class="py-4 bg-white">
         <div class="container">

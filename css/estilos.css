@@ -21,11 +21,15 @@ body{margin:0;color:#21313a;background:#fff}
 /* WhatsApp CTA button */
 .btn-whatsapp{background:#25D366;color:#fff;border:0}
 .btn-whatsapp:hover,.btn-whatsapp:focus{background:#1DA851;color:#fff}
+.btn-whatsapp, .btn-whatsapp i { color: #fff !important; }
 .navbar.scrolled .btn-whatsapp{background:#25D366 !important;color:#fff !important}
 
 /* HERO - mobile first: stacked content */
 .hero{display:flex;align-items:center;justify-content:center;padding:3rem 1rem;background-repeat:no-repeat;background-size:cover}
 .hero .lead{opacity:0.95}
+.hero .h2, .hero h1, .hero .lead {
+    text-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
 
 /* Cards */
 .card{border:0;border-radius:12px;overflow:hidden}
@@ -45,3 +49,21 @@ body{margin:0;color:#21313a;background:#fff}
 @media(min-width:1200px){
     .hero{min-height:80vh}
 }
+
+/* Why choose us section */
+.why-us{background:linear-gradient(rgba(13,149,200,0.95),rgba(13,149,200,0.95)), url('../img/hero/hero1.jpg') center/cover no-repeat;padding:4.5rem 0;color:#fff}
+.why-us h2{color:#fff}
+.why-us .why-card{background:rgba(255,255,255,0.06);border-radius:10px;padding:1.25rem}
+.why-us .why-card p{opacity:0.95}
+.why-img{height:140px;object-fit:cover;border-radius:8px}
+
+/* Footer CTA */
+.footer-cta{background:var(--primary);color:#fff;padding:3rem 0;text-align:center}
+.footer-cta .btn{background:#fff;color:var(--primary)}
+
+/* Site footer */
+.site-footer{background:#f7f9fb;padding:3rem 0;color:#6b7780}
+.site-footer .footer-logo{font-weight:700;color:#0d95c8}
+.site-footer a{color:#0d95c8}
+.site-footer .social a{display:inline-block;width:36px;height:36px;border-radius:50%;background:#fff;margin-right:.5rem;line-height:36px;text-align:center;color:#0d95c8}
+
