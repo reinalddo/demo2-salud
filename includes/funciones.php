@@ -11,11 +11,13 @@ $doctor_phone_display = '+58 424 123 4567';
 $doctor_address = 'Consultorio Privado - Av. Ejemplo 123, Ciudad';
 
 // Helper para generar enlace de WhatsApp
-function wa_link($text = '') {
-    global $doctor_phone;
-    $base = 'https://wa.me/' . $doctor_phone;
-    if ($text === '') return $base;
-    return $base . '?text=' . rawurlencode($text);
+if (!function_exists('wa_link')) {
+    function wa_link($text = '') {
+        global $doctor_phone;
+        $base = 'https://wa.me/' . $doctor_phone;
+        if ($text === '') return $base;
+        return $base . '?text=' . rawurlencode($text);
+    }
 }
 
 ?>

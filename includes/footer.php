@@ -3,11 +3,11 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-8 text-md-start text-center mb-3 mb-md-0">
-                    <h3 class="mb-1">¿Necesitas ayuda de un asesor?</h3>
-                    <p class="mb-0">Contáctenos y con gusto te ayudaremos en tu consulta.</p>
+                    <h3 class="mb-1">Agenda una cita por WhatsApp</h3>
+                    <p class="mb-0">Haz tu consulta rápidamente a través de nuestro chat de WhatsApp.</p>
                 </div>
                 <div class="col-md-4 text-md-end text-center">
-                    <a href="contacto.php" class="btn btn-lg">CONTÁCTENOS</a>
+                    <a href="<?php echo wa_link('Hola, quisiera agendar una cita.'); ?>" target="_blank" class="btn btn-lg btn-whatsapp"><i class="bi bi-whatsapp me-2"></i> Agenda una cita</a>
                 </div>
             </div>
         </div>
