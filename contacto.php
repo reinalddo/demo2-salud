@@ -79,8 +79,8 @@ $mapTitle = $mapFrame['title'] ?? 'Mapa de ubicación';
                     <div class="card mb-3">
                         <div class="card-body">
                             <h6 class="fw-bold"><?php echo htmlspecialchars($infoTitle, ENT_QUOTES, 'UTF-8'); ?></h6>
-                            <p class="mb-1">Tel: <a href="<?php echo htmlspecialchars($infoPhone['href'] ?? '#', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($infoPhone['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($infoPhone['texto'] ?? '', ENT_QUOTES, 'UTF-8'); ?></a></p>
-                            <p class="mb-1">Correo: <a href="<?php echo htmlspecialchars($infoEmail['href'] ?? '#', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($infoEmail['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($infoEmail['texto'] ?? '', ENT_QUOTES, 'UTF-8'); ?></a></p>
+                            <p class="mb-1">Tel: <a href="<?php echo htmlspecialchars(project_url($infoPhone['href'] ?? '#'), ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($infoPhone['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($infoPhone['texto'] ?? '', ENT_QUOTES, 'UTF-8'); ?></a></p>
+                            <p class="mb-1">Correo: <a href="<?php echo htmlspecialchars(project_url($infoEmail['href'] ?? '#'), ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($infoEmail['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($infoEmail['texto'] ?? '', ENT_QUOTES, 'UTF-8'); ?></a></p>
                             <p class="mb-1">Horario: <?php echo htmlspecialchars($infoSchedule, ENT_QUOTES, 'UTF-8'); ?></p>
                         </div>
                     </div>
@@ -89,7 +89,7 @@ $mapTitle = $mapFrame['title'] ?? 'Mapa de ubicación';
                         <div class="card-body p-0">
                             <!-- Demo OpenStreetMap embed -->
                             <iframe width="<?php echo htmlspecialchars($mapWidth, ENT_QUOTES, 'UTF-8'); ?>" height="<?php echo htmlspecialchars($mapHeight, ENT_QUOTES, 'UTF-8'); ?>" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<?php echo htmlspecialchars($mapSrc, ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($mapTitle, ENT_QUOTES, 'UTF-8'); ?>" style="border:0"></iframe>
-                            <div style="text-align:right"><small><a href="<?php echo htmlspecialchars($mapLink['href'] ?? '#', ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($mapLink['target'] ?? '_blank', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($mapLink['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($mapLink['texto'] ?? 'Ver mapa más grande', ENT_QUOTES, 'UTF-8'); ?></a></small></div>
+                            <div style="text-align:right"><small><a href="<?php echo htmlspecialchars(project_url($mapLink['href'] ?? '#'), ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($mapLink['target'] ?? '_blank', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($mapLink['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($mapLink['texto'] ?? 'Ver mapa más grande', ENT_QUOTES, 'UTF-8'); ?></a></small></div>
                         </div>
                     </div>
                 </div>

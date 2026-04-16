@@ -37,6 +37,13 @@
       "href": "#",
       "target": "_self",
       "title": "Descargar informacion de apoyo psicologico"
+    },
+    "colores": {
+      "bannerFondo": "#0d95c8",
+      "bannerTexto": "#ffffff",
+      "botonFondo": "#17a2b8",
+      "botonTexto": "#ffffff",
+      "cardFondo": "#ffffff"
     }
   }
 }

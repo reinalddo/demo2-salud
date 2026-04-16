@@ -22,7 +22,7 @@ if ($searchQuery !== '') {
         <div class="container">
             <div class="search-banner p-3 rounded-3 d-flex flex-column flex-md-row align-items-center justify-content-between">
                 <h3 class="mb-2 mb-md-0"><?php echo htmlspecialchars($searchConfig['titulo'] ?? 'Busca un servicio:', ENT_QUOTES, 'UTF-8'); ?></h3>
-                <form class="w-100 w-md-50 ms-md-3" role="search" action="servicios" method="get">
+                <form class="w-100 w-md-50 ms-md-3" role="search" action="<?php echo htmlspecialchars(project_url('servicios'), ENT_QUOTES, 'UTF-8'); ?>" method="get">
                     <div class="input-group">
                         <input type="search" name="q" value="<?php echo htmlspecialchars($searchQuery, ENT_QUOTES, 'UTF-8'); ?>" class="form-control" placeholder="<?php echo htmlspecialchars($searchConfig['placeholder'] ?? 'Buscar por nombre o especialidad...', ENT_QUOTES, 'UTF-8'); ?>" aria-label="Buscar servicios">
                             <button class="btn btn-light" type="submit" title="<?php echo htmlspecialchars($searchConfig['boton']['title'] ?? 'Buscar servicios', ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($searchConfig['boton']['texto'] ?? 'Buscar', ENT_QUOTES, 'UTF-8'); ?></button>
@@ -43,7 +43,7 @@ if ($searchQuery !== '') {
                     <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="<?php echo (int) (($index + 1) * 50); ?>">
                         <div class="service-card hover-lift">
                             <div class="card-img-wrap position-relative">
-                                <img src="<?php echo htmlspecialchars($listing['urlimagen'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($listing['alt'] ?? ($listing['titulo'] ?? ''), ENT_QUOTES, 'UTF-8'); ?>">
+                                <img src="<?php echo htmlspecialchars(asset_url($listing['urlimagen'] ?? ''), ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($listing['alt'] ?? ($listing['titulo'] ?? ''), ENT_QUOTES, 'UTF-8'); ?>">
                                 <div class="overlay"></div>
                                 <div class="card-info p-3 text-white">
                                     <h5 class="mb-1"><?php echo htmlspecialchars($listing['titulo'] ?? '', ENT_QUOTES, 'UTF-8'); ?></h5>
@@ -51,9 +51,9 @@ if ($searchQuery !== '') {
                                 </div>
                             </div>
                             <div class="card-footer text-center bg-white p-3">
-                                <a href="servicios/<?php echo rawurlencode($item['slug'] ?? ''); ?>" class="btn btn-teal btn-sm"><?php echo htmlspecialchars($listing['enlaceTexto'] ?? 'Mas informacion', ENT_QUOTES, 'UTF-8'); ?></a>
+                                <a href="<?php echo htmlspecialchars(project_url('servicios/' . rawurlencode($item['slug'] ?? '')), ENT_QUOTES, 'UTF-8'); ?>" class="btn btn-teal btn-sm"><?php echo htmlspecialchars($listing['enlaceTexto'] ?? 'Mas informacion', ENT_QUOTES, 'UTF-8'); ?></a>
                             </div>
-                            <a href="servicios/<?php echo rawurlencode($item['slug'] ?? ''); ?>" class="stretched-link" aria-label="Ver servicio"></a>
+                            <a href="<?php echo htmlspecialchars(project_url('servicios/' . rawurlencode($item['slug'] ?? '')), ENT_QUOTES, 'UTF-8'); ?>" class="stretched-link" aria-label="Ver servicio"></a>
                         </div>
                     </div>
                 <?php endforeach; ?>
