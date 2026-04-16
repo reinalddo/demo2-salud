@@ -1,0 +1,15 @@
+{
+  "seccion": "contacto-informacion",
+  "titulo": "Contacto",
+  "telefono": {
+    "texto": "+58 424 123 4567",
+    "href": "tel:+584241234567",
+    "title": "Llamar al consultorio"
+  },
+  "correo": {
+    "texto": "informes@ipor.pe",
+    "href": "mailto:informes@ipor.pe",
+    "title": "Enviar correo"
+  },
+  "horario": "Lunes a sábado: 7:00 a.m. - 8:00 p.m."
+}

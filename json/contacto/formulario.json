@@ -1,0 +1,40 @@
+{
+  "seccion": "contacto-formulario",
+  "titulo": "Envíanos un Mensaje",
+  "campos": {
+    "nombre": {
+      "id": "fullName",
+      "label": "Nombre Completo",
+      "placeholder": "Ej: Juan Pérez"
+    },
+    "asunto": {
+      "id": "subject",
+      "label": "Asunto / Servicio",
+      "opciones": [
+        "Consulta General",
+        "Consulta especializada",
+        "Quimioterapia",
+        "Radioterapia",
+        "Diagnóstico por imagen",
+        "Laboratorio clínico",
+        "Genética oncológica",
+        "Rehabilitación",
+        "Apoyo psicológico"
+      ]
+    },
+    "mensaje": {
+      "id": "message",
+      "label": "Mensaje",
+      "placeholder": "Hola, quisiera agendar una cita para...",
+      "rows": 6
+    }
+  },
+  "boton": {
+    "texto": "Enviar por WhatsApp",
+    "title": "Enviar mensaje por WhatsApp"
+  },
+  "ayuda": "Te responderemos inmediatamente a tu chat.",
+  "mensajes": {
+    "validacion": "Por favor completa tu nombre y el mensaje."
+  }
+}

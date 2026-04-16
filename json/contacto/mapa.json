@@ -1,0 +1,15 @@
+{
+  "seccion": "contacto-mapa",
+  "iframe": {
+    "src": "https://www.openstreetmap.org/export/embed.html?bbox=-77.0385%2C-12.097%2C-77.0335%2C-12.093&layer=mapnik&marker=-12.095%2C-77.036",
+    "width": "100%",
+    "height": "250",
+    "title": "Mapa de ubicación"
+  },
+  "enlace": {
+    "texto": "Ver mapa más grande",
+    "href": "https://www.openstreetmap.org/?mlat=-12.095&mlon=-77.036#map=18/-12.095/-77.036",
+    "target": "_blank",
+    "title": "Abrir mapa grande"
+  }
+}
