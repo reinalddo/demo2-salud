@@ -31,7 +31,7 @@
                     <h6 class="fw-bold">Enlaces principales</h6>
                     <ul class="list-unstyled">
                         <li><a href="index.php">Inicio</a></li>
-                        <li><a href="sobre.php">Sobre</a></li>
+                        <li><a href="objetivos.php">Objetivos</a></li>
                         <li><a href="servicios.php">Servicios</a></li>
                         <li><a href="contacto.php">Contáctenos</a></li>
                     </ul>
@@ -61,12 +61,14 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/main.js"></script>
 
-    <script>
-      AOS.init({ duration: 900, once: true });
-    </script>
+        <script>
+            AOS.init({ duration: 900, once: true });
+            // Ensure AOS recalculates positions after all resources load
+            window.addEventListener('load', function(){ if (window.AOS && typeof window.AOS.refresh === 'function') window.AOS.refresh(); });
+        </script>
 
 </body>
 </html>
