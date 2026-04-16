@@ -30,10 +30,10 @@
                 <div class="col-md-3">
                     <h6 class="fw-bold">Enlaces principales</h6>
                     <ul class="list-unstyled">
-                        <li><a href="index.php">Inicio</a></li>
-                        <li><a href="objetivos.php">Objetivos</a></li>
-                        <li><a href="servicios.php">Servicios</a></li>
-                        <li><a href="contacto.php">Contáctenos</a></li>
+                        <li><a href="./">Inicio</a></li>
+                        <li><a href="objetivos">Objetivos</a></li>
+                        <li><a href="servicios">Servicios</a></li>
+                        <li><a href="contacto">Contáctenos</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">

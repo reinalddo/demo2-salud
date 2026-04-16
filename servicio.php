@@ -70,7 +70,7 @@ include 'includes/header.php';
                     <div class="card-body text-center">
                         <h6 class="card-title">Buscar a un especialista</h6>
                         <img src="assets/img/doctor/doctor1.jpg" class="img-fluid rounded-2 mb-2" alt="especialista">
-                        <a href="contacto.php" class="btn btn-teal btn-sm">ESTAMOS PARA AYUDARTE</a>
+                        <a href="contacto" class="btn btn-teal btn-sm">ESTAMOS PARA AYUDARTE</a>
                     </div>
                 </div>
 
