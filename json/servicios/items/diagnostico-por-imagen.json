@@ -1,0 +1,42 @@
+{
+  "slug": "diagnostico-por-imagen",
+  "orden": 4,
+  "listado": {
+    "titulo": "Diagnostico por imagen",
+    "resumen": "Imagenes con tecnologia de ultima generacion.",
+    "urlimagen": "assets/img/doctor/doctor1.jpg",
+    "alt": "Diagnostico por imagen",
+    "enlaceTexto": "Mas informacion"
+  },
+  "detalle": {
+    "pageTitle": "Diagnostico por imagen",
+    "bannerTitulo": "DIAGNOSTICO POR IMAGEN",
+    "titulo": "Diagnostico por imagen",
+    "urlimagen": "assets/img/doctor/doctor1.jpg",
+    "alt": "Diagnostico por imagen",
+    "parrafos": [
+      "El diagnostico por imagen permite visualizar estructuras internas con alta definicion para apoyar decisiones clinicas y terapeuticas.",
+      "Estos estudios son fundamentales para detectar lesiones, valorar respuesta al tratamiento y hacer seguimiento evolutivo."
+    ],
+    "faqs": [
+      {
+        "pregunta": "¿Que estudios incluye esta area?",
+        "respuesta": "Puede incluir ecografia, tomografia, resonancia u otros estudios, segun la necesidad clinica."
+      },
+      {
+        "pregunta": "¿Necesito preparacion previa?",
+        "respuesta": "Depende del estudio solicitado. El equipo indicara si requiere ayuno o alguna preparacion especial."
+      },
+      {
+        "pregunta": "¿Cuanto tarda la entrega del informe?",
+        "respuesta": "Los tiempos varian segun el examen, pero procuramos entregar resultados con rapidez y precision."
+      }
+    ],
+    "descarga": {
+      "texto": "DESCARGAR INFORMACION - DIAGNOSTICO POR IMAGEN",
+      "href": "#",
+      "target": "_self",
+      "title": "Descargar informacion de diagnostico por imagen"
+    }
+  }
+}

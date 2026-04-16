@@ -1,0 +1,42 @@
+{
+  "slug": "apoyo-psicologico",
+  "orden": 8,
+  "listado": {
+    "titulo": "Apoyo psicologico",
+    "resumen": "Acompanamiento emocional para pacientes y familias.",
+    "urlimagen": "assets/img/doctor/doctor1.jpg",
+    "alt": "Apoyo psicologico",
+    "enlaceTexto": "Mas informacion"
+  },
+  "detalle": {
+    "pageTitle": "Apoyo psicologico",
+    "bannerTitulo": "APOYO PSICOLOGICO",
+    "titulo": "Apoyo psicologico",
+    "urlimagen": "assets/img/doctor/doctor1.jpg",
+    "alt": "Apoyo psicologico",
+    "parrafos": [
+      "El apoyo psicologico ofrece un espacio de escucha, orientacion y manejo emocional para pacientes y familiares durante el proceso de atencion.",
+      "Acompanamos situaciones de ansiedad, incertidumbre, adaptacion al diagnostico y fortalecimiento de recursos personales y familiares."
+    ],
+    "faqs": [
+      {
+        "pregunta": "¿A quien esta dirigido este servicio?",
+        "respuesta": "A pacientes y familiares que necesiten acompanamiento emocional durante cualquier etapa del proceso."
+      },
+      {
+        "pregunta": "¿Puede combinarse con otros tratamientos?",
+        "respuesta": "Si. Es un servicio complementario que puede integrarse al plan general de atencion."
+      },
+      {
+        "pregunta": "¿Las sesiones son confidenciales?",
+        "respuesta": "Si. Se desarrollan en un entorno profesional y confidencial orientado al bienestar del paciente."
+      }
+    ],
+    "descarga": {
+      "texto": "DESCARGAR INFORMACION - APOYO PSICOLOGICO",
+      "href": "#",
+      "target": "_self",
+      "title": "Descargar informacion de apoyo psicologico"
+    }
+  }
+}

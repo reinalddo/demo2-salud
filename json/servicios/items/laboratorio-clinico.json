@@ -1,0 +1,42 @@
+{
+  "slug": "laboratorio-clinico",
+  "orden": 5,
+  "listado": {
+    "titulo": "Laboratorio clinico",
+    "resumen": "Analisis especializados y rapidos.",
+    "urlimagen": "assets/img/services/service1.jpg",
+    "alt": "Laboratorio clinico",
+    "enlaceTexto": "Mas informacion"
+  },
+  "detalle": {
+    "pageTitle": "Laboratorio clinico",
+    "bannerTitulo": "LABORATORIO CLINICO",
+    "titulo": "Laboratorio clinico",
+    "urlimagen": "assets/img/services/service1.jpg",
+    "alt": "Laboratorio clinico",
+    "parrafos": [
+      "El laboratorio clinico aporta informacion esencial para diagnostico, control terapeutico y seguimiento del paciente.",
+      "Contamos con procesos orientados a resultados confiables y tiempos de respuesta oportunos para apoyar al cuerpo medico."
+    ],
+    "faqs": [
+      {
+        "pregunta": "¿Que tipo de analisis realizan?",
+        "respuesta": "Realizamos pruebas de rutina y estudios especializados de apoyo diagnostico y control."
+      },
+      {
+        "pregunta": "¿Se necesita ayuno?",
+        "respuesta": "Depende del examen solicitado. La indicacion se especifica al momento de la toma de muestra."
+      },
+      {
+        "pregunta": "¿Los resultados se entregan digitalmente?",
+        "respuesta": "Segun el tipo de prueba, los resultados pueden compartirse en formato digital o fisico."
+      }
+    ],
+    "descarga": {
+      "texto": "DESCARGAR INFORMACION - LABORATORIO CLINICO",
+      "href": "#",
+      "target": "_self",
+      "title": "Descargar informacion de laboratorio clinico"
+    }
+  }
+}

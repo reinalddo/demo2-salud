@@ -1,0 +1,60 @@
+{
+  "seccion": "servicios-pagina",
+  "buscador": {
+    "titulo": "Busca un servicio:",
+    "placeholder": "Buscar por nombre o especialidad...",
+    "boton": {
+      "texto": "Buscar",
+      "title": "Buscar servicios"
+    }
+  },
+  "listado": {
+    "titulo": "Servicios",
+    "sinResultados": "No se encontraron servicios con esa busqueda."
+  },
+  "detalle": {
+    "noEncontrado": {
+      "titulo": "Servicio no encontrado",
+      "texto": "El servicio solicitado no existe o fue removido del catalogo JSON."
+    },
+    "sidebar": {
+      "especialista": {
+        "titulo": "Buscar a un especialista",
+        "urlimagen": "assets/img/doctor/doctor1.jpg",
+        "alt": "Especialista",
+        "boton": {
+          "texto": "ESTAMOS PARA AYUDARTE",
+          "href": "contacto",
+          "target": "_self",
+          "title": "Ir a contacto"
+        }
+      },
+      "enlacesInteres": {
+        "titulo": "Enlaces de Interes",
+        "items": [
+          {
+            "titulo": "Dia Mundial de la Salud",
+            "fecha": "7 de abril de 2026",
+            "urlimagen": "assets/img/services/service1.jpg",
+            "href": "#",
+            "title": "Ver enlace de interes"
+          },
+          {
+            "titulo": "Prevencion y chequeo oportuno",
+            "fecha": "5 de abril de 2026",
+            "urlimagen": "assets/img/services/service2.jpg",
+            "href": "#",
+            "title": "Ver enlace de interes"
+          },
+          {
+            "titulo": "Habitos para una vida saludable",
+            "fecha": "31 de marzo de 2026",
+            "urlimagen": "assets/img/services/service3.jpg",
+            "href": "#",
+            "title": "Ver enlace de interes"
+          }
+        ]
+      }
+    }
+  }
+}

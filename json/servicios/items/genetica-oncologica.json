@@ -1,0 +1,42 @@
+{
+  "slug": "genetica-oncologica",
+  "orden": 6,
+  "listado": {
+    "titulo": "Genetica oncologica",
+    "resumen": "Consejeria y estudios geneticos.",
+    "urlimagen": "assets/img/services/service2.jpg",
+    "alt": "Genetica oncologica",
+    "enlaceTexto": "Mas informacion"
+  },
+  "detalle": {
+    "pageTitle": "Genetica oncologica",
+    "bannerTitulo": "GENETICA ONCOLOGICA",
+    "titulo": "Genetica oncologica",
+    "urlimagen": "assets/img/services/service2.jpg",
+    "alt": "Genetica oncologica",
+    "parrafos": [
+      "La genetica oncologica ayuda a identificar riesgos hereditarios, orientar decisiones preventivas y personalizar estrategias de seguimiento.",
+      "La consejeria genetica permite interpretar antecedentes familiares y resultados de estudios con enfoque clinico."
+    ],
+    "faqs": [
+      {
+        "pregunta": "¿Quien deberia considerar una evaluacion genetica?",
+        "respuesta": "Pacientes con antecedentes familiares relevantes o con tumores que sugieran predisposicion hereditaria."
+      },
+      {
+        "pregunta": "¿La prueba genetica reemplaza otros estudios?",
+        "respuesta": "No. Complementa la evaluacion clinica y debe interpretarse junto al contexto medico y familiar."
+      },
+      {
+        "pregunta": "¿Los resultados cambian el seguimiento?",
+        "respuesta": "En muchos casos si, porque permiten ajustar controles, prevencion y recomendaciones para familiares."
+      }
+    ],
+    "descarga": {
+      "texto": "DESCARGAR INFORMACION - GENETICA ONCOLOGICA",
+      "href": "#",
+      "target": "_self",
+      "title": "Descargar informacion de genetica oncologica"
+    }
+  }
+}

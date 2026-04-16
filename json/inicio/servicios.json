@@ -7,7 +7,7 @@
       "titulo": "Consulta Privada",
       "texto": "Atencion individualizada y diagnostico integral.",
       "enlace": {
-        "href": "servicio",
+        "href": "servicios/consulta-especializada",
         "target": "_self",
         "texto": "Ver servicio",
         "title": "Ir al detalle de Consulta Privada"
@@ -18,7 +18,7 @@
       "titulo": "Ecografia y Pruebas",
       "texto": "Estudios rapidos con interpretacion profesional.",
       "enlace": {
-        "href": "servicio",
+        "href": "servicios/quimioterapia",
         "target": "_self",
         "texto": "Ver servicio",
         "title": "Ir al detalle de Ecografia y Pruebas"
@@ -29,7 +29,7 @@
       "titulo": "Teleconsulta",
       "texto": "Consultas online para seguimiento y conveniencia.",
       "enlace": {
-        "href": "servicio",
+        "href": "servicios/radioterapia",
         "target": "_self",
         "texto": "Ver servicio",
         "title": "Ir al detalle de Teleconsulta"

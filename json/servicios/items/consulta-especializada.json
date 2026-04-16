@@ -1,0 +1,81 @@
+{
+  "slug": "consulta-especializada",
+  "orden": 1,
+  "listado": {
+    "titulo": "Consulta especializada",
+    "resumen": "Evaluacion y plan de tratamiento personalizado.",
+    "urlimagen": "assets/img/services/service1.jpg",
+    "alt": "Consulta especializada",
+    "enlaceTexto": "Mas informacion"
+  },
+  "detalle": {
+    "pageTitle": "Consulta especializada",
+    "bannerTitulo": "CONSULTA ESPECIALIZADA",
+    "titulo": "Consulta especializada",
+    "urlimagen": "assets/img/services/service1.jpg",
+    "alt": "Consulta especializada",
+    "parrafos": [
+      "La consulta especializada permite una evaluacion integral del paciente con enfoque clinico y preventivo, orientada a construir un plan de atencion personalizado.",
+      "Nuestro equipo revisa antecedentes, sintomas, estudios previos y objetivos terapeuticos para definir los pasos diagnosticos y de seguimiento mas adecuados."
+    ],
+    "faqs": [
+      {
+        "pregunta": "¿En que consiste la consulta especializada?",
+        "respuesta": "Es una evaluacion detallada con un especialista para definir diagnostico, conducta medica y seguimiento."
+      },
+      {
+        "pregunta": "¿Que debo llevar a la consulta?",
+        "respuesta": "Recomendamos traer examenes previos, informes medicos y una lista de sintomas o dudas principales."
+      },
+      {
+        "pregunta": "¿Se puede combinar con teleconsulta?",
+        "respuesta": "Si. Dependiendo del caso, el seguimiento puede continuar de forma virtual luego de la consulta presencial."
+      }
+    ],
+    "descarga": {
+      "texto": "DESCARGAR INFORMACION - CONSULTA ESPECIALIZADA",
+      "href": "#",
+      "target": "_self",
+      "title": "Descargar informacion de consulta especializada"
+    }
+  },
+  "sidebar": {
+    "especialista": {
+      "titulo": "Buscar a un especialista",
+      "urlimagen": "assets/img/doctor/doctor1.jpg",
+      "alt": "Especialista",
+      "boton": {
+        "texto": "ESTAMOS PARA AYUDARTE",
+        "href": "contacto",
+        "target": "_self",
+        "title": "Ir a contacto"
+      }
+    },
+    "enlacesInteres": {
+      "titulo": "Enlaces de Interes",
+      "items": [
+        {
+          "titulo": "Dia Mundial de la Salud",
+          "fecha": "7 de abril de 2026",
+          "urlimagen": "assets/img/services/service1.jpg",
+          "href": "#",
+          "title": "Ver enlace de interes"
+        },
+        {
+          "titulo": "Prevencion y chequeo oportuno",
+          "fecha": "5 de abril de 2026",
+          "urlimagen": "assets/img/services/service2.jpg",
+          "href": "#",
+          "title": "Ver enlace de interes"
+        },
+        {
+          "titulo": "Habitos para una vida saludable",
+          "fecha": "31 de marzo de 2026",
+          "urlimagen": "assets/img/services/service3.jpg",
+          "href": "#",
+          "title": "Ver enlace de interes"
+        }
+      ]
+    }
+  }
+}

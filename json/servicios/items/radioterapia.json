@@ -1,0 +1,42 @@
+{
+  "slug": "radioterapia",
+  "orden": 3,
+  "listado": {
+    "titulo": "Radioterapia",
+    "resumen": "Terapias conformadas con planificacion avanzada.",
+    "urlimagen": "assets/img/services/service3.jpg",
+    "alt": "Radioterapia",
+    "enlaceTexto": "Mas informacion"
+  },
+  "detalle": {
+    "pageTitle": "Radioterapia",
+    "bannerTitulo": "RADIOTERAPIA",
+    "titulo": "Radioterapia",
+    "urlimagen": "assets/img/services/service3.jpg",
+    "alt": "Radioterapia",
+    "parrafos": [
+      "La radioterapia utiliza radiacion de alta precision para tratar tumores y reducir la exposicion en tejidos sanos cercanos.",
+      "Cada caso es planificado con imagenes y herramientas especializadas para optimizar la dosis y la seguridad del tratamiento."
+    ],
+    "faqs": [
+      {
+        "pregunta": "¿Para que casos se indica radioterapia?",
+        "respuesta": "Puede utilizarse como tratamiento principal, complementario o paliativo, segun el diagnostico y la indicacion medica."
+      },
+      {
+        "pregunta": "¿El tratamiento duele?",
+        "respuesta": "No. La aplicacion de radioterapia es indolora; los efectos dependen de la zona tratada y del numero de sesiones."
+      },
+      {
+        "pregunta": "¿Se necesitan estudios previos?",
+        "respuesta": "Si. La planificacion se realiza con estudios de imagen y una evaluacion medica detallada."
+      }
+    ],
+    "descarga": {
+      "texto": "DESCARGAR INFORMACION - RADIOTERAPIA",
+      "href": "#",
+      "target": "_self",
+      "title": "Descargar informacion de radioterapia"
+    }
+  }
+}

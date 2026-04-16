@@ -44,8 +44,8 @@ $themeHeroOverlay = htmlspecialchars($themeColors['heroOverlay'] ?? 'rgba(0,0,0,
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Theme CSS (mobile-first) -->
-    <link href="css/estilos.css" rel="stylesheet">
-    <link rel="icon" href="<?php echo htmlspecialchars($headerFavicon, ENT_QUOTES, 'UTF-8'); ?>" type="image/svg+xml">
+    <link href="<?php echo htmlspecialchars(asset_url('css/estilos.css'), ENT_QUOTES, 'UTF-8'); ?>" rel="stylesheet">
+    <link rel="icon" href="<?php echo htmlspecialchars(asset_url($headerFavicon), ENT_QUOTES, 'UTF-8'); ?>" type="image/svg+xml">
 
     <style>
         :root{
@@ -64,7 +64,7 @@ $themeHeroOverlay = htmlspecialchars($themeColors['heroOverlay'] ?? 'rgba(0,0,0,
 
 <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="<?php echo htmlspecialchars($headerLogoHref, ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($headerLogoTarget, ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($headerLogoTitle, ENT_QUOTES, 'UTF-8'); ?>">
+        <a class="navbar-brand fw-bold" href="<?php echo htmlspecialchars(project_url($headerLogoHref), ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($headerLogoTarget, ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($headerLogoTitle, ENT_QUOTES, 'UTF-8'); ?>">
             <i class="<?php echo htmlspecialchars($headerLogoIcon, ENT_QUOTES, 'UTF-8'); ?> me-2"></i><?php echo htmlspecialchars($headerLogoText, ENT_QUOTES, 'UTF-8'); ?>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,9 +74,9 @@ $themeHeroOverlay = htmlspecialchars($themeColors['heroOverlay'] ?? 'rgba(0,0,0,
         <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
                 <?php foreach ($headerMenu as $item): ?>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo htmlspecialchars($item['href'] ?? './', ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($item['target'] ?? '_self', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($item['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($item['texto'] ?? '', ENT_QUOTES, 'UTF-8'); ?></a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo htmlspecialchars(project_url($item['href'] ?? './'), ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($item['target'] ?? '_self', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($item['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($item['texto'] ?? '', ENT_QUOTES, 'UTF-8'); ?></a></li>
                 <?php endforeach; ?>
-                <li class="nav-item ms-2"><a class="btn btn-whatsapp rounded-pill px-3" href="<?php echo htmlspecialchars($headerCtaHref, ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($headerCtaTarget, ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($headerCtaTitle, ENT_QUOTES, 'UTF-8'); ?>"><i class="bi bi-whatsapp"></i> <?php echo htmlspecialchars($headerCtaText, ENT_QUOTES, 'UTF-8'); ?></a></li>
+                <li class="nav-item ms-2"><a class="btn btn-whatsapp rounded-pill px-3" href="<?php echo htmlspecialchars(project_url($headerCtaHref), ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($headerCtaTarget, ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($headerCtaTitle, ENT_QUOTES, 'UTF-8'); ?>"><i class="bi bi-whatsapp"></i> <?php echo htmlspecialchars($headerCtaText, ENT_QUOTES, 'UTF-8'); ?></a></li>
             </ul>
         </div>
     </div>

@@ -1,0 +1,42 @@
+{
+  "slug": "quimioterapia",
+  "orden": 2,
+  "listado": {
+    "titulo": "Quimioterapia",
+    "resumen": "Protocolos seguros y monitorizacion continua.",
+    "urlimagen": "assets/img/services/service2.jpg",
+    "alt": "Quimioterapia",
+    "enlaceTexto": "Mas informacion"
+  },
+  "detalle": {
+    "pageTitle": "Quimioterapia",
+    "bannerTitulo": "QUIMIOTERAPIA",
+    "titulo": "Quimioterapia",
+    "urlimagen": "assets/img/services/service2.jpg",
+    "alt": "Quimioterapia",
+    "parrafos": [
+      "La quimioterapia forma parte de multiples esquemas de tratamiento oncologico y se adapta al tipo de tumor, etapa de la enfermedad y estado general del paciente.",
+      "Trabajamos con protocolos seguros, acompanamiento clinico permanente y seguimiento estrecho para detectar y manejar efectos secundarios oportunamente."
+    ],
+    "faqs": [
+      {
+        "pregunta": "¿Como se planifica la quimioterapia?",
+        "respuesta": "El tratamiento se define segun el tipo de cancer, los estudios diagnosticos y los objetivos terapeuticos del paciente."
+      },
+      {
+        "pregunta": "¿Cuanto dura cada ciclo?",
+        "respuesta": "La duracion depende del protocolo indicado; cada esquema tiene tiempos y frecuencias distintas."
+      },
+      {
+        "pregunta": "¿Se controla la tolerancia al tratamiento?",
+        "respuesta": "Si. El equipo monitoriza signos, sintomas y examenes para ajustar el tratamiento si es necesario."
+      }
+    ],
+    "descarga": {
+      "texto": "DESCARGAR INFORMACION - QUIMIOTERAPIA",
+      "href": "#",
+      "target": "_self",
+      "title": "Descargar informacion de quimioterapia"
+    }
+  }
+}

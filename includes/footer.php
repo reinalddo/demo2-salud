@@ -35,7 +35,7 @@ $footerPhone = $footerContact['telefono'] ?? [
                     <p class="mb-0"><?php echo htmlspecialchars($footerCtaText, ENT_QUOTES, 'UTF-8'); ?></p>
                 </div>
                 <div class="col-md-4 text-md-end text-center">
-                    <a href="<?php echo htmlspecialchars($footerCtaButton['href'] ?? '#', ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($footerCtaButton['target'] ?? '_blank', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($footerCtaButton['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" class="btn btn-lg btn-whatsapp"><i class="bi bi-whatsapp me-2"></i> <?php echo htmlspecialchars($footerCtaButton['texto'] ?? 'Agenda una cita', ENT_QUOTES, 'UTF-8'); ?></a>
+                    <a href="<?php echo htmlspecialchars(project_url($footerCtaButton['href'] ?? '#'), ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($footerCtaButton['target'] ?? '_blank', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($footerCtaButton['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" class="btn btn-lg btn-whatsapp"><i class="bi bi-whatsapp me-2"></i> <?php echo htmlspecialchars($footerCtaButton['texto'] ?? 'Agenda una cita', ENT_QUOTES, 'UTF-8'); ?></a>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@ $footerPhone = $footerContact['telefono'] ?? [
                     <p class="mb-2"><?php echo htmlspecialchars($footerBrandDescription, ENT_QUOTES, 'UTF-8'); ?></p>
                     <div class="social">
                         <?php foreach ($footerSocial as $social): ?>
-                            <a href="<?php echo htmlspecialchars($social['href'] ?? '#', ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($social['target'] ?? '_self', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($social['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" aria-label="<?php echo htmlspecialchars($social['red'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"><i class="bi bi-<?php echo htmlspecialchars($social['red'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"></i></a>
+                            <a href="<?php echo htmlspecialchars(project_url($social['href'] ?? '#'), ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($social['target'] ?? '_self', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($social['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" aria-label="<?php echo htmlspecialchars($social['red'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"><i class="bi bi-<?php echo htmlspecialchars($social['red'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"></i></a>
                         <?php endforeach; ?>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ $footerPhone = $footerContact['telefono'] ?? [
                     <h6 class="fw-bold">Enlaces principales</h6>
                     <ul class="list-unstyled">
                         <?php foreach ($footerLinks as $link): ?>
-                            <li><a href="<?php echo htmlspecialchars($link['href'] ?? './', ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($link['target'] ?? '_self', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($link['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($link['texto'] ?? '', ENT_QUOTES, 'UTF-8'); ?></a></li>
+                            <li><a href="<?php echo htmlspecialchars(project_url($link['href'] ?? './'), ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($link['target'] ?? '_self', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($link['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($link['texto'] ?? '', ENT_QUOTES, 'UTF-8'); ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -89,7 +89,7 @@ $footerPhone = $footerContact['telefono'] ?? [
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="js/main.js"></script>
+        <script src="<?php echo htmlspecialchars(asset_url('js/main.js'), ENT_QUOTES, 'UTF-8'); ?>"></script>
 
         <script>
             AOS.init({ duration: 900, once: true });

@@ -1,100 +1,130 @@
 <?php
-$pageTitle = 'Braquiterapia HDR - Demo Médico';
+include 'includes/funciones.php';
+
+$serviciosPagina = load_json_data('servicios/pagina.json', []);
+$serviciosItems = load_json_collection('servicios/items');
+$requestedSlug = trim($_GET['slug'] ?? '');
+$currentService = null;
+
+if ($requestedSlug === '') {
+    $currentService = $serviciosItems[0] ?? null;
+} else {
+    foreach ($serviciosItems as $item) {
+        if (($item['slug'] ?? '') === $requestedSlug) {
+            $currentService = $item;
+            break;
+        }
+    }
+}
+
+if ($currentService === null && $requestedSlug !== '') {
+    http_response_code(404);
+}
+
+$currentListing = $currentService['listado'] ?? [];
+$currentDetail = $currentService['detalle'] ?? [];
+$currentSidebar = $currentService['sidebar'] ?? [];
+$defaultDetail = $serviciosPagina['detalle'] ?? [];
+$specialist = $currentSidebar['especialista'] ?? ($defaultDetail['sidebar']['especialista'] ?? []);
+$interestLinks = $currentSidebar['enlacesInteres'] ?? ($defaultDetail['sidebar']['enlacesInteres'] ?? []);
+$notFoundTitle = $defaultDetail['noEncontrado']['titulo'] ?? 'Servicio no encontrado';
+$notFoundText = $defaultDetail['noEncontrado']['texto'] ?? 'El servicio solicitado no existe o fue removido del catalogo JSON.';
+
+$detailColors = $currentDetail['colores'] ?? [];
+$bannerBackground = $detailColors['bannerFondo'] ?? 'var(--primary)';
+$bannerText = $detailColors['bannerTexto'] ?? '#ffffff';
+$buttonBackground = $detailColors['botonFondo'] ?? 'var(--primary)';
+$buttonText = $detailColors['botonTexto'] ?? '#ffffff';
+$cardBackground = $detailColors['cardFondo'] ?? '#ffffff';
+
+$pageTitle = (($currentDetail['pageTitle'] ?? ($currentListing['titulo'] ?? 'Servicio')) . ' - Demo Médico');
 include 'includes/header.php';
 ?>
 
 <main>
-    <section class="detail-banner py-3">
+    <section class="detail-banner py-3" style="background:<?php echo htmlspecialchars($bannerBackground, ENT_QUOTES, 'UTF-8'); ?>;">
         <div class="container">
             <div class="detail-banner-box rounded-2 px-3 py-2">
-                <h2 class="mb-0 text-white">BRAQUITERAPIA HDR</h2>
+                <h2 class="mb-0" style="color:<?php echo htmlspecialchars($bannerText, ENT_QUOTES, 'UTF-8'); ?>;"><?php echo htmlspecialchars($currentDetail['bannerTitulo'] ?? ($currentListing['titulo'] ?? 'SERVICIO'), ENT_QUOTES, 'UTF-8'); ?></h2>
             </div>
         </div>
     </section>
 
     <div class="container py-4">
-        <div class="row">
-            <div class="col-12 col-lg-9">
-                <img src="assets/img/services/service1.jpg" alt="Braquiterapia HDR" class="img-fluid rounded-3 mb-3">
-
-                <div class="card p-3 mb-3">
-                    <h4 class="fw-bold">Braquiterapia HDR</h4>
-                    <p class="text-muted">La braquiterapia (también conocida como radioterapia interna o terapia de implantes) es una técnica que permite administrar radiación directamente en el tumor con gran precisión, minimizando la exposición de tejidos sanos.</p>
-                    <p class="text-muted">Nuestros especialistas evalúan la indicación y planificación con imágenes por tomografía y equipos de alta precisión. En la mayoría de los casos, el tratamiento se realiza en sesiones cortas y con mínimas molestias para el paciente.</p>
-
-                    <div class="accordion" id="serviceAccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    ¿Qué es la Braquiterapia HDR?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="faqOne" data-bs-parent="#serviceAccordion">
-                                <div class="accordion-body">
-                                    Explicación breve y demostrativa sobre en qué consiste la braquiterapia HDR y cómo se aplica en nuestro centro.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    ¿Para qué sirve la Braquiterapia HDR en el tratamiento del cáncer?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#serviceAccordion">
-                                <div class="accordion-body">
-                                    Información resumida sobre indicaciones y beneficios clínicos.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="faqThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Efectos secundarios y cuidados
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#serviceAccordion">
-                                <div class="accordion-body">
-                                    Breve guía de efectos posibles y recomendaciones generales postratamiento.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="#" class="btn btn-teal mt-3">DESCARGAR TRÍPTICO - BRAQUITERAPIA HDR</a>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-3 right-sidebar">
-                <div class="card mb-3">
-                    <div class="card-body text-center">
-                        <h6 class="card-title">Buscar a un especialista</h6>
-                        <img src="assets/img/doctor/doctor1.jpg" class="img-fluid rounded-2 mb-2" alt="especialista">
-                        <a href="contacto" class="btn btn-teal btn-sm">ESTAMOS PARA AYUDARTE</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-body">
-                        <h6 class="fw-bold">Enlaces de Interés</h6>
-                        <ul class="list-unstyled small mt-3">
-                            <li class="d-flex mb-2">
-                                <img src="assets/img/services/service1.jpg" class="me-2 rounded-2" style="width:48px;height:48px;object-fit:cover;">
-                                <div><a href="#">Día Mundial de la Salud</a><br><small class="text-muted">7 de abril de 2026</small></div>
-                            </li>
-                            <li class="d-flex mb-2">
-                                <img src="assets/img/services/service2.jpg" class="me-2 rounded-2" style="width:48px;height:48px;object-fit:cover;">
-                                <div><a href="#">Día de la Cirugía Peruana</a><br><small class="text-muted">5 de abril de 2026</small></div>
-                            </li>
-                            <li class="d-flex mb-2">
-                                <img src="assets/img/services/service3.jpg" class="me-2 rounded-2" style="width:48px;height:48px;object-fit:cover;">
-                                <div><a href="#">Control del Cáncer de Colon</a><br><small class="text-muted">31 de marzo de 2026</small></div>
-                            </li>
-                        </ul>
+        <?php if ($currentService === null): ?>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card p-4">
+                        <h4 class="fw-bold mb-3"><?php echo htmlspecialchars($notFoundTitle, ENT_QUOTES, 'UTF-8'); ?></h4>
+                        <p class="text-muted mb-0"><?php echo htmlspecialchars($notFoundText, ENT_QUOTES, 'UTF-8'); ?></p>
                     </div>
                 </div>
             </div>
-        </div>
+        <?php else: ?>
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    <img src="<?php echo htmlspecialchars(asset_url($currentDetail['urlimagen'] ?? ''), ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($currentDetail['alt'] ?? ($currentDetail['titulo'] ?? ''), ENT_QUOTES, 'UTF-8'); ?>" class="img-fluid rounded-3 mb-3">
+
+                    <div class="card p-3 mb-3" style="background:<?php echo htmlspecialchars($cardBackground, ENT_QUOTES, 'UTF-8'); ?>;">
+                        <h4 class="fw-bold"><?php echo htmlspecialchars($currentDetail['titulo'] ?? ($currentListing['titulo'] ?? ''), ENT_QUOTES, 'UTF-8'); ?></h4>
+                        <?php foreach (($currentDetail['parrafos'] ?? []) as $paragraph): ?>
+                            <p class="text-muted"><?php echo htmlspecialchars($paragraph, ENT_QUOTES, 'UTF-8'); ?></p>
+                        <?php endforeach; ?>
+
+                        <div class="accordion" id="serviceAccordion">
+                            <?php foreach (($currentDetail['faqs'] ?? []) as $index => $faq): ?>
+                                <?php
+                                    $faqId = 'faq' . ($index + 1);
+                                    $collapseId = 'collapse' . ($index + 1);
+                                ?>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="<?php echo $faqId; ?>">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#<?php echo $collapseId; ?>" aria-expanded="false" aria-controls="<?php echo $collapseId; ?>">
+                                            <?php echo htmlspecialchars($faq['pregunta'] ?? '', ENT_QUOTES, 'UTF-8'); ?>
+                                        </button>
+                                    </h2>
+                                    <div id="<?php echo $collapseId; ?>" class="accordion-collapse collapse" aria-labelledby="<?php echo $faqId; ?>" data-bs-parent="#serviceAccordion">
+                                        <div class="accordion-body">
+                                            <?php echo htmlspecialchars($faq['respuesta'] ?? '', ENT_QUOTES, 'UTF-8'); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+
+                        <?php if (!empty($currentDetail['descarga']['href'])): ?>
+                            <a href="<?php echo htmlspecialchars(project_url($currentDetail['descarga']['href']), ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($currentDetail['descarga']['target'] ?? '_self', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($currentDetail['descarga']['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" class="btn btn-teal mt-3" style="background:<?php echo htmlspecialchars($buttonBackground, ENT_QUOTES, 'UTF-8'); ?>;color:<?php echo htmlspecialchars($buttonText, ENT_QUOTES, 'UTF-8'); ?>;"><?php echo htmlspecialchars($currentDetail['descarga']['texto'] ?? '', ENT_QUOTES, 'UTF-8'); ?></a>
+                        <?php endif; ?>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 right-sidebar">
+                    <div class="card mb-3">
+                        <div class="card-body text-center">
+                            <h6 class="card-title"><?php echo htmlspecialchars($specialist['titulo'] ?? 'Buscar a un especialista', ENT_QUOTES, 'UTF-8'); ?></h6>
+                            <img src="<?php echo htmlspecialchars(asset_url($specialist['urlimagen'] ?? 'assets/img/doctor/doctor1.jpg'), ENT_QUOTES, 'UTF-8'); ?>" class="img-fluid rounded-2 mb-2" alt="<?php echo htmlspecialchars($specialist['alt'] ?? 'especialista', ENT_QUOTES, 'UTF-8'); ?>">
+                            <?php if (!empty($specialist['boton']['href'])): ?>
+                                <a href="<?php echo htmlspecialchars(project_url($specialist['boton']['href']), ENT_QUOTES, 'UTF-8'); ?>" target="<?php echo htmlspecialchars($specialist['boton']['target'] ?? '_self', ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($specialist['boton']['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>" class="btn btn-teal btn-sm" style="background:<?php echo htmlspecialchars($buttonBackground, ENT_QUOTES, 'UTF-8'); ?>;color:<?php echo htmlspecialchars($buttonText, ENT_QUOTES, 'UTF-8'); ?>;"><?php echo htmlspecialchars($specialist['boton']['texto'] ?? '', ENT_QUOTES, 'UTF-8'); ?></a>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="fw-bold"><?php echo htmlspecialchars($interestLinks['titulo'] ?? 'Enlaces de Interes', ENT_QUOTES, 'UTF-8'); ?></h6>
+                            <ul class="list-unstyled small mt-3">
+                                <?php foreach (($interestLinks['items'] ?? []) as $link): ?>
+                                    <li class="d-flex mb-2">
+                                        <img src="<?php echo htmlspecialchars(asset_url($link['urlimagen'] ?? ''), ENT_QUOTES, 'UTF-8'); ?>" class="me-2 rounded-2" style="width:48px;height:48px;object-fit:cover;">
+                                        <div><a href="<?php echo htmlspecialchars(project_url($link['href'] ?? '#'), ENT_QUOTES, 'UTF-8'); ?>" title="<?php echo htmlspecialchars($link['title'] ?? '', ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($link['titulo'] ?? '', ENT_QUOTES, 'UTF-8'); ?></a><br><small class="text-muted"><?php echo htmlspecialchars($link['fecha'] ?? '', ENT_QUOTES, 'UTF-8'); ?></small></div>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
     </div>
 
 </main>

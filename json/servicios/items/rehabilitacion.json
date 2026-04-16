@@ -1,0 +1,42 @@
+{
+  "slug": "rehabilitacion",
+  "orden": 7,
+  "listado": {
+    "titulo": "Rehabilitacion",
+    "resumen": "Programas de recuperacion fisica y terapia.",
+    "urlimagen": "assets/img/services/service3.jpg",
+    "alt": "Rehabilitacion",
+    "enlaceTexto": "Mas informacion"
+  },
+  "detalle": {
+    "pageTitle": "Rehabilitacion",
+    "bannerTitulo": "REHABILITACION",
+    "titulo": "Rehabilitacion",
+    "urlimagen": "assets/img/services/service3.jpg",
+    "alt": "Rehabilitacion",
+    "parrafos": [
+      "Los programas de rehabilitacion buscan recuperar movilidad, fuerza, autonomia y calidad de vida durante o despues del tratamiento.",
+      "El plan terapeutico se adapta a cada paciente y puede incluir ejercicios funcionales, terapia fisica y acompanamiento especializado."
+    ],
+    "faqs": [
+      {
+        "pregunta": "¿Cuando se recomienda iniciar rehabilitacion?",
+        "respuesta": "Puede iniciarse antes, durante o despues del tratamiento, segun la condicion funcional y la indicacion medica."
+      },
+      {
+        "pregunta": "¿Que beneficios ofrece?",
+        "respuesta": "Ayuda a reducir limitaciones fisicas, controlar sintomas y mejorar el desempeno en actividades diarias."
+      },
+      {
+        "pregunta": "¿La rehabilitacion es personalizada?",
+        "respuesta": "Si. Cada programa se ajusta a las necesidades y metas funcionales del paciente."
+      }
+    ],
+    "descarga": {
+      "texto": "DESCARGAR INFORMACION - REHABILITACION",
+      "href": "#",
+      "target": "_self",
+      "title": "Descargar informacion de rehabilitacion"
+    }
+  }
+}
