@@ -1,0 +1,13 @@
+{
+  "seccion": "theme-global",
+  "colores": {
+    "primary": "#0d95c8",
+    "accent": "#17a2b8",
+    "muted": "#6c757d",
+    "whatsapp": "#25D366",
+    "textDark": "#21313a",
+    "textLight": "#ffffff",
+    "surface": "#f7f9fb",
+    "heroOverlay": "rgba(0,0,0,0.35)"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "seccion": "inicio-servicios",
+  "titulo": "Servicios",
+  "items": [
+    {
+      "urlimagen": "assets/img/services/service1.jpg",
+      "titulo": "Consulta Privada",
+      "texto": "Atencion individualizada y diagnostico integral.",
+      "enlace": {
+        "href": "servicio",
+        "target": "_self",
+        "texto": "Ver servicio",
+        "title": "Ir al detalle de Consulta Privada"
+      }
+    },
+    {
+      "urlimagen": "assets/img/services/service2.jpg",
+      "titulo": "Ecografia y Pruebas",
+      "texto": "Estudios rapidos con interpretacion profesional.",
+      "enlace": {
+        "href": "servicio",
+        "target": "_self",
+        "texto": "Ver servicio",
+        "title": "Ir al detalle de Ecografia y Pruebas"
+      }
+    },
+    {
+      "urlimagen": "assets/img/services/service3.jpg",
+      "titulo": "Teleconsulta",
+      "texto": "Consultas online para seguimiento y conveniencia.",
+      "enlace": {
+        "href": "servicio",
+        "target": "_self",
+        "texto": "Ver servicio",
+        "title": "Ir al detalle de Teleconsulta"
+      }
+    }
+  ],
+  "colores": {
+    "fondo": "#f7f9fb",
+    "titulo": "#21313a",
+    "texto": "#6c757d"
+  }
+}

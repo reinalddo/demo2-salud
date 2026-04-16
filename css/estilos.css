@@ -1,6 +1,6 @@
 /* demomedicina2 - Mobile First Styles */
 html,body{height:100%;font-family:system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;overflow-x:hidden}
-body{margin:0;color:#21313a;background:#fff;overflow-x:hidden}
+body{margin:0;color:var(--text-dark);background:#fff;overflow-x:hidden}
 
 /* NAV */
 .navbar{transition:background 0.25s ease,padding 0.25s ease;z-index:1100}
@@ -19,10 +19,10 @@ body{margin:0;color:#21313a;background:#fff;overflow-x:hidden}
 .navbar-light .navbar-toggler { border-color: rgba(0,0,0,0.08); }
 
 /* WhatsApp CTA button */
-.btn-whatsapp{background:#25D366;color:#fff;border:0}
-.btn-whatsapp:hover,.btn-whatsapp:focus{background:#1DA851;color:#fff}
+.btn-whatsapp{background:var(--whatsapp);color:#fff;border:0}
+.btn-whatsapp:hover,.btn-whatsapp:focus{background:var(--whatsapp);color:#fff;filter:brightness(0.92)}
 .btn-whatsapp, .btn-whatsapp i { color: #fff !important; }
-.navbar.scrolled .btn-whatsapp{background:#25D366 !important;color:#fff !important}
+.navbar.scrolled .btn-whatsapp{background:var(--whatsapp) !important;color:#fff !important}
 
 /* HERO - mobile first: stacked content */
 .hero{display:flex;align-items:center;justify-content:center;padding:3rem 1rem;background-repeat:no-repeat;background-size:cover;position:relative}
@@ -32,7 +32,7 @@ body{margin:0;color:#21313a;background:#fff;overflow-x:hidden}
 }
 
 /* Darken hero images slightly for legibility */
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.22));z-index:0}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg, var(--hero-overlay), rgba(0,0,0,0.22));z-index:0}
 .hero > .container{position:relative;z-index:1}
 
 /* Cards */
@@ -101,10 +101,10 @@ body{margin:0;color:#21313a;background:#fff;overflow-x:hidden}
 /* Footer CTA */
 .footer-cta{background:var(--primary);color:#fff;padding:3rem 0;text-align:center}
 .footer-cta .btn{background:#fff;color:var(--primary)}
-.footer-cta .btn-whatsapp{background:#25D366 !important;color:#fff !important}
+.footer-cta .btn-whatsapp{background:var(--whatsapp) !important;color:#fff !important}
 
 /* Site footer */
-.site-footer{background:#f7f9fb;padding:3rem 0;color:#6b7780}
+.site-footer{background:var(--surface);padding:3rem 0;color:#6b7780}
 .site-footer .footer-logo{font-weight:700;color:#0d95c8}
 .site-footer a{color:#0d95c8}
 .site-footer .social a{display:inline-block;width:36px;height:36px;border-radius:50%;background:#fff;margin-right:.5rem;line-height:36px;text-align:center;color:#0d95c8}

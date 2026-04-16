@@ -1,0 +1,52 @@
+{
+  "seccion": "header-global",
+  "logo": {
+    "tipo": "icono-texto",
+    "icono": "bi bi-person-badge",
+    "texto": "Dr. Alejandro Ruiz",
+    "href": "./",
+    "target": "_self",
+    "title": "Ir al inicio"
+  },
+  "nombre": "Dr. Alejandro Ruiz",
+  "numerowhatsapp": {
+    "codigo": "584241234567",
+    "visible": "+58 424 123 4567",
+    "href": "https://wa.me/584241234567",
+    "target": "_blank",
+    "title": "Escribir por WhatsApp"
+  },
+  "favicon": "assets/img/favicon/stethoscope.svg",
+  "menu": [
+    {
+      "texto": "Inicio",
+      "href": "./",
+      "target": "_self",
+      "title": "Ir a inicio"
+    },
+    {
+      "texto": "Objetivos",
+      "href": "objetivos",
+      "target": "_self",
+      "title": "Ir a objetivos"
+    },
+    {
+      "texto": "Servicios",
+      "href": "servicios",
+      "target": "_self",
+      "title": "Ir a servicios"
+    },
+    {
+      "texto": "Contacto",
+      "href": "contacto",
+      "target": "_self",
+      "title": "Ir a contacto"
+    }
+  ],
+  "botonCita": {
+    "texto": "Cita",
+    "href": "https://wa.me/584241234567",
+    "target": "_blank",
+    "title": "Abrir WhatsApp para solicitar una cita"
+  }
+}

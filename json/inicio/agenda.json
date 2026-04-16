@@ -1,0 +1,17 @@
+{
+  "seccion": "inicio-agenda",
+  "titulo": "Agenda una cita por WhatsApp",
+  "texto": "Haz tu consulta rapidamente a traves de nuestro chat de WhatsApp.",
+  "boton": {
+    "href": "https://wa.me/584241234567?text=Hola%2C%20quisiera%20agendar%20una%20cita.",
+    "target": "_blank",
+    "texto": "Agenda una cita",
+    "title": "Abrir WhatsApp para agendar una cita"
+  },
+  "colores": {
+    "fondo": "#0d95c8",
+    "texto": "#ffffff",
+    "botonFondo": "#25D366",
+    "botonTexto": "#ffffff"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "seccion": "inicio-quien-soy",
+  "urlimagen": "assets/img/doctor/doctor1.jpg",
+  "titulo": "Sobre Dr. Alejandro Ruiz",
+  "texto": "Profesional con amplia experiencia en atencion clinica y prevencion. Brinda planes personalizados y seguimiento continuo a sus pacientes.",
+  "items": [
+    "Evaluaciones completas",
+    "Planes preventivos y control de factores de riesgo",
+    "Teleconsulta y seguimientos digitales"
+  ],
+  "colores": {
+    "fondo": "#ffffff",
+    "titulo": "#21313a",
+    "texto": "#6c757d"
+  }
+}

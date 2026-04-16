@@ -1,0 +1,27 @@
+{
+  "seccion": "inicio-header",
+  "urlimagen": "assets/img/hero/hero1.jpg",
+  "titulo": "Consulta Privada con Dr. Alejandro Ruiz",
+  "texto": "Especialista en Cardiologia y Medicina Preventiva. Atencion personalizada, examenes de ultima generacion y teleconsulta.",
+  "boton1": {
+    "href": "#servicios",
+    "target": "_self",
+    "texto": "Ver Servicios",
+    "title": "Ir a la seccion de servicios"
+  },
+  "boton2": {
+    "href": "https://wa.me/584241234567?text=Hola%2C%20quiero%20agendar%20una%20cita%20con%20Dr.%20Alejandro%20Ruiz",
+    "target": "_blank",
+    "texto": "Agendar Cita",
+    "title": "Agendar una cita por WhatsApp"
+  },
+  "colores": {
+    "overlay": "rgba(0,0,0,0.35)",
+    "titulo": "#ffffff",
+    "texto": "#ffffff",
+    "botonPrimarioFondo": "#ffffff",
+    "botonPrimarioTexto": "#0d95c8",
+    "botonSecundarioBorde": "#ffffff",
+    "botonSecundarioTexto": "#ffffff"
+  }
+}

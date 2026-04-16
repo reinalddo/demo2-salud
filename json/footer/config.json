@@ -1,0 +1,82 @@
+{
+  "seccion": "footer-global",
+  "cta": {
+    "titulo": "Agenda una cita por WhatsApp",
+    "texto": "Haz tu consulta rapidamente a traves de nuestro chat de WhatsApp.",
+    "boton": {
+      "texto": "Agenda una cita",
+      "href": "https://wa.me/584241234567?text=Hola%2C%20quisiera%20agendar%20una%20cita.",
+      "target": "_blank",
+      "title": "Agendar una cita por WhatsApp"
+    }
+  },
+  "marca": {
+    "nombre": "Dr. Alejandro Ruiz",
+    "descripcion": "Consultorio Privado · Atencion personalizada y teleconsulta."
+  },
+  "enlaces": [
+    {
+      "texto": "Inicio",
+      "href": "./",
+      "target": "_self",
+      "title": "Ir a inicio"
+    },
+    {
+      "texto": "Objetivos",
+      "href": "objetivos",
+      "target": "_self",
+      "title": "Ir a objetivos"
+    },
+    {
+      "texto": "Servicios",
+      "href": "servicios",
+      "target": "_self",
+      "title": "Ir a servicios"
+    },
+    {
+      "texto": "Contáctenos",
+      "href": "contacto",
+      "target": "_self",
+      "title": "Ir a contacto"
+    }
+  ],
+  "horario": [
+    "Lunes a Sabado: 7:00 a.m. - 8:00 p.m.",
+    "Valet parking gratuito"
+  ],
+  "contacto": {
+    "direccion": "Consultorio Privado - Av. Ejemplo 123, Ciudad",
+    "telefono": {
+      "texto": "+58 424 123 4567",
+      "href": "tel:+584241234567",
+      "target": "_self",
+      "title": "Llamar al consultorio"
+    }
+  },
+  "social": [
+    {
+      "red": "facebook",
+      "href": "#",
+      "target": "_self",
+      "title": "Facebook"
+    },
+    {
+      "red": "instagram",
+      "href": "#",
+      "target": "_self",
+      "title": "Instagram"
+    },
+    {
+      "red": "youtube",
+      "href": "#",
+      "target": "_self",
+      "title": "YouTube"
+    },
+    {
+      "red": "linkedin",
+      "href": "#",
+      "target": "_self",
+      "title": "LinkedIn"
+    }
+  ]
+}

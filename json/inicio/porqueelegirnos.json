@@ -1,0 +1,30 @@
+{
+  "seccion": "inicio-por-que-elegirnos",
+  "titulo": "¿Por que elegirnos?",
+  "tarjetas": [
+    {
+      "titulo": "Especialistas en Oncologia",
+      "texto": "Nuestro Staff Medico cuenta con amplia trayectoria y formacion continua para brindar atencion de calidad.",
+      "urlimagen": "assets/img/services/service1.jpg",
+      "alt": "Oncologia"
+    },
+    {
+      "titulo": "Tecnologia de vanguardia",
+      "texto": "Contamos con equipamiento moderno para diagnosticos precisos y tratamientos efectivos.",
+      "urlimagen": "assets/img/services/service2.jpg",
+      "alt": "Tecnologia"
+    },
+    {
+      "titulo": "Atencion integral",
+      "texto": "Ofrecemos servicios complementarios: farmacoterapia, nutricion, telemedicina y atencion domiciliaria.",
+      "urlimagen": "assets/img/services/service3.jpg",
+      "alt": "Atencion integral"
+    }
+  ],
+  "colores": {
+    "fondo": "#0d95c8",
+    "fondoTarjeta": "rgba(255,255,255,0.06)",
+    "titulo": "#ffffff",
+    "texto": "#ffffff"
+  }
+}
