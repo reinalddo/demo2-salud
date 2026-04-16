@@ -1,0 +1,29 @@
+{
+  "seccion": "objetivos-mision-vision",
+  "imagen": {
+    "url": "assets/img/services/service2.jpg",
+    "alt": "Instalaciones"
+  },
+  "tabs": [
+    {
+      "id": "mision",
+      "label": "Mision",
+      "titulo": "Nuestra Mision",
+      "texto": "Somos un instituto especializado, acreditado internacionalmente en el cuidado integral del paciente oncologico y su familia, mediante un enfoque humanizado y contando con tecnologia oncologica de vanguardia.",
+      "boton": {
+        "texto": "NUESTRAS POLITICAS DE CALIDAD",
+        "href": "#",
+        "target": "_self",
+        "title": "Ver politicas de calidad"
+      },
+      "activa": true
+    },
+    {
+      "id": "vision",
+      "label": "Vision",
+      "titulo": "Nuestra Vision",
+      "texto": "Ser referencia regional en atencion oncologica integral, con innovacion tecnologica y excelencia asistencial orientada al paciente.",
+      "activa": false
+    }
+  ]
+}

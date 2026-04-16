@@ -1,0 +1,31 @@
+{
+  "seccion": "objetivos-fortalezas",
+  "titulo": "Nuestras fortalezas",
+  "items": [
+    {
+      "icono": "bi bi-people-fill",
+      "titulo": "Equipo medico",
+      "texto": "Equipo asistencial de amplia trayectoria y experiencia profesional."
+    },
+    {
+      "icono": "bi bi-gear-fill",
+      "titulo": "Tecnologia",
+      "texto": "Equipamiento e infraestructura de vanguardia para el tratamiento del cancer."
+    },
+    {
+      "icono": "bi bi-award-fill",
+      "titulo": "Afiliaciones",
+      "texto": "Instituto afiliado a organizaciones internacionales para investigacion y formacion."
+    },
+    {
+      "icono": "bi bi-briefcase-fill",
+      "titulo": "Atencion integral",
+      "texto": "Servicios complementarios como farmacia, nutricion y telemedicina."
+    },
+    {
+      "icono": "bi bi-people",
+      "titulo": "Calidad",
+      "texto": "Procesos acreditados y politicas de calidad centradas en el paciente."
+    }
+  ]
+}

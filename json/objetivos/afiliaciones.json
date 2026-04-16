@@ -1,0 +1,22 @@
+{
+  "seccion": "objetivos-afiliaciones",
+  "titulo": "Afiliaciones y certificaciones",
+  "items": [
+    {
+      "urlimagen": "assets/img/services/service1.jpg",
+      "alt": "Certificacion 1"
+    },
+    {
+      "urlimagen": "assets/img/services/service2.jpg",
+      "alt": "Certificacion 2"
+    },
+    {
+      "urlimagen": "assets/img/services/service3.jpg",
+      "alt": "Certificacion 3"
+    },
+    {
+      "urlimagen": "assets/img/doctor/doctor1.jpg",
+      "alt": "Certificacion 4"
+    }
+  ]
+}

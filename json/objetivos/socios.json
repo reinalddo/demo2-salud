@@ -1,0 +1,22 @@
+{
+  "seccion": "objetivos-socios",
+  "titulo": "Nuestros socios estrategicos",
+  "items": [
+    {
+      "urlimagen": "assets/img/services/service1.jpg",
+      "alt": "Socio estrategico 1"
+    },
+    {
+      "urlimagen": "assets/img/services/service2.jpg",
+      "alt": "Socio estrategico 2"
+    },
+    {
+      "urlimagen": "assets/img/services/service3.jpg",
+      "alt": "Socio estrategico 3"
+    },
+    {
+      "urlimagen": "assets/img/doctor/doctor1.jpg",
+      "alt": "Socio estrategico 4"
+    }
+  ]
+}
